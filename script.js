@@ -1,31 +1,3 @@
-// window.onerror = function (msg, file, line, col, error) {
-//   StackTrace.fromError(error, line).then(callback).catch(errback);
-// };
-// var errback = function (err) {
-//   console.log(err.message);
-// };
-// var callback = function (stackframes) {
-//   var stringifiedStack = stackframes
-//     .map(function (sf) {
-//       return sf.toString();
-//     })
-//     .join('\n');
-// };
-
-window.onerror = function (msg, file, line, col, error) {
-  // StackTrace.fromError(error, line).then(callback).catch(errback);
-};
-var errback = function (err) {
-  console.log(new Error('from onerror').stack);
-};
-var callback = function (stackframes) {
-  var stringifiedStack = stackframes
-    .map(function (sf) {
-      return sf.toString();
-    })
-    .join('\n');
-};
-
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
 
