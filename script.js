@@ -42,6 +42,7 @@ async function getJokes() {
   } catch (error) {
     // Catch Reeors Headers
     console.log('whoops', error);
+    console.log("działa")
   }
 }
 
